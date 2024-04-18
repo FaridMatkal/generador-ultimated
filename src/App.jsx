@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { FaQuoteLeft, FaQuoteRight, FaTwitterSquare, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
+import { QuoteComponent } from './Citas.jsx';
 
 {/* npm install react-icons (único comando para instalar la librería de react)*/}
 
 function App() {
   
+  const quoteGenerator = QuoteComponent();
+
   return (
     <div id='quote-box'>
 
@@ -15,7 +18,7 @@ function App() {
       <i className='comilla'>
         <FaQuoteLeft/>
       </i>
-        <span id='text'>Generador de frases aleatoria</span>
+        <span id='text'> </span>
       <i className='comilla'>
         <FaQuoteRight/>
       </i>
@@ -23,7 +26,7 @@ function App() {
     </div>
 
     <div className='author'>
-      <span id='author'>- Ralph Waldo Emerson</span>
+      <span id='author'>  </span>
     </div>
 
     <div className='buttons'>
@@ -38,7 +41,6 @@ function App() {
       </a>
       <button id='new-quote'>New quote</button>
     </div>
-    
   </div>
   )
 }
