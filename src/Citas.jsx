@@ -104,8 +104,10 @@ const Quote = () => {
       },
     ];
     const randomIndex = Math.floor(Math.random() * Quotes.length); // índice aleatorio
-    console.log(Quotes[randomIndex]);
-    
-  };
+    const randomQuote = Quotes[randomIndex];
+
+    return randomQuote;
+
+  }
   
 export const QuoteComponent = Quote;

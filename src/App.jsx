@@ -10,6 +10,7 @@ import { QuoteComponent } from './Citas.jsx';
 function App() {
   
   const quoteGenerator = QuoteComponent();
+  
 
   return (
     <div id='quote-box'>
@@ -18,15 +19,15 @@ function App() {
       <i className='comilla'>
         <FaQuoteLeft/>
       </i>
-        <span id='text'> </span>
+        <span id='text'> {quoteGenerator.cita} </span>
       <i className='comilla'>
         <FaQuoteRight/>
       </i>
       
     </div>
 
-    <div className='author'>
-      <span id='author'>  </span>
+    <div className='author'>  
+      <span id='author'> - {quoteGenerator.author} </span>
     </div>
 
     <div className='buttons'>
