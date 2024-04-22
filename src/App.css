@@ -41,6 +41,10 @@ body {
   margin-left: 55%;
 }
 
+#new-quote:hover {
+  cursor: pointer;
+}
+
 .comilla {
   font-size: 35px;
   color: orange;
@@ -49,7 +53,7 @@ body {
 .social-media {
   color: orange;
   font-size: 44px;
-  padding-right: 5px;
+  padding-right: 110px;
 }
 
 .buttons {
@@ -70,6 +74,10 @@ body {
   margin-bottom: 10px;
 }
 
+
+.color  {
+  background-color: #297429;
+}
 
 
 
